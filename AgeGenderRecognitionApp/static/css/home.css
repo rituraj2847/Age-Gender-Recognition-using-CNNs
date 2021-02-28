@@ -1,0 +1,41 @@
+
+h1,div {
+  text-align: center;
+  color: white;
+}
+
+img {
+  height: 240px;
+  width: 240px;
+  margin: 30px;
+  border-radius: 8px;
+
+}
+
+.button-submit {
+    border: 2px solid gray;
+	color: gray;
+	background-color: white;
+	padding: 8px 20px;
+	border-radius: 8px;
+	font-size: 20px;
+	font-weight: bold;
+        }
+
+body{
+	background-image: url('/static/images/background.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+.user-input{
+    color: white;
+    font-size : 15px;
+    border-radius: 10px;
+}
+
+.result{
+    color: white;
+    font-size : 20px;
+}

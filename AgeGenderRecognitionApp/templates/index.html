@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>
+		Age and Gender Recognition
+	</title>
+	<link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+	<h1>Age and Gender Recognition using CNN</h2>
+		<div class="centered">
+			<img src= '{{ image }} ' width="240" height="240">
+
+		 <form action="{% url 'home' %}" method = "post" enctype="multipart/form-data">
+        	{% csrf_token %}
+        	<p>
+				<label for="id_image"></label>
+				<input class="user-input" id="id_image" type="file" name="image" accept="image/*">
+			</p>
+        	<button type="submit" class="button-submit">Upload</button>
+    	</form>
+			<p class="result">{{ result }}</p>
+		</div>
+	</h1>
+		</body>
+		</html>
